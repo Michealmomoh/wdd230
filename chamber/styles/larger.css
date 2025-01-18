@@ -1,8 +1,13 @@
 @media (min-width: 768px) {
     nav ul {
-        display: flex;
+        justify-content: flex-end;
     }
-    
 
-    
+    .hero-text {
+        text-align: left;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+    }
 }
