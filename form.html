@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development ">
+    <meta name="author" content="Michael momoh">
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Page description for social media preview">
+    <meta property="og:image" content="URL_to_your_image">
+    <meta property="og:url" content="https://michealmomoh.github.io/wdd230/">
+    <title>Michael momoh - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/getDates.js" defer></script>
+    <link rel="icon" href="https://icon-library.com/images/favicon-icon/favicon-icon-22.jpg">
+
+
+</head>
+<body>
+    <hr>
+    <header>
+        <img src="images/michael.jpg" alt="no images" width="200" >
+        <link rel="icon" href="images/favicon.ico">
+
+        <span> MICHAEL KELVIN MOMOH</span>
+        <button id="darkModeToggle">Dark Mode</button>
+
+    </header>
+    <button id="hamburger" aria-label="Menu">&#9776;</button>
+    <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="chamber/discover.html"> Discover </a>
+        <a href="site_plan.html">Site Plan</a>
+        <a href="form.html">Form</a>
+        
+      </nav>
+    <main>
+        <h1>Form Submission</h1>
+    <form action="record.html" method="get">
+      <!-- Username -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 alpha-numeric characters.">
+      
+      <!-- Confirm Password -->
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+      <p id="password-error" class="error"></p>
+      
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid BYUI email address.">
+      
+      <!-- Page Rating -->
+      <label for="rating">Page Rating:</label>
+      <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="updateRatingValue(this.value)"> 
+      <span id="rating-value">5</span>
+      
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+       
+
+       
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="2025"></span> Michael momoh, sierra leone 
+        </p>
+
+    </footer>
+    <script src="script/form.js"></script>
+    <hr>
+</body>
+</html>
