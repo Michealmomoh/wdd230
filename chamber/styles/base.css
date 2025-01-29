@@ -108,4 +108,19 @@ footer {
       grid-template-columns: 1fr 3fr;
     }
   }
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    form {
+      grid-template-columns: 1fr 1fr;
+    }
+    aside {
+      margin-left: 2rem;
+    }
+  }
+  
   

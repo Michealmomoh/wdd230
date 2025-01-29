@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development ">
+    <meta name="author" content="Michael momoh">
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Page description for social media preview">
+    <meta property="og:image" content="URL_to_your_image">
+    <meta property="og:url" content="https://michealmomoh.github.io/wdd230/">
+    <title>Michael momoh - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/getDates.js" defer></script>
+    <link rel="icon" href="https://icon-library.com/images/favicon-icon/favicon-icon-22.jpg">
+
+
+</head>
+<body>
+    <hr>
+    <header>
+        <img src="images/Member.jpg" alt="no images" width="200" >
+        <link rel="icon" href="images/favicon.ico">
+
+        <span> MICHAEL KELVIN MOMOH</span>
+        <button id="darkModeToggle">Dark Mode</button>
+
+    </header>
+    <button id="hamburger" aria-label="Menu">&#9776;</button>
+    <main>
+        <section>
+            <h2>Membership Application</h2>
+            <form action="thankyou.html" method="get">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required>
+              
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required>
+              
+              <label for="title">Title/Position:</label>
+              <input type="text" id="title" name="title" pattern="[A-Za-z-\s]{7,}" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required>
+              
+              <label for="phone">Mobile Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+              
+              <label for="organization">Business/Organization Name:</label>
+              <input type="text" id="organization" name="organization" required>
+              
+              <label for="membership">Membership Level:</label>
+              <select id="membership" name="membership">
+                <option value="NP">Non-Profit</option>
+                <option value="Bronze">Bronze</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+              </select>
+              
+              <label for="description">Business/Organization Description:</label>
+              <textarea id="description" name="description"></textarea>
+              
+              <input type="hidden" id="timestamp" name="timestamp" value="">
+              
+              <button type="submit">Submit Application</button>
+            </form>
+          </section>
+      
+          <aside>
+            <h3>Membership Levels</h3>
+            <ul>
+              <li><strong>Non-Profit:</strong> Free. Access to community events.</li>
+              <li><strong>Bronze:</strong> Basic perks, event participation.</li>
+              <li><strong>Silver:</strong> Advertising benefits and discounts.</li>
+              <li><strong>Gold:</strong> Premium perks and sponsorship opportunities.</li>
+            </ul>
+          </aside>
+        
+       
+       
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="2025"></span> Michael momoh, sierra leone 
+        </p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script src="script/getDates.js"></script>
+    <script src="script/menuToggle.js"></script>
+    <hr>
+</body>
+</html>
