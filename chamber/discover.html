@@ -3,91 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the sierra leone Chamber of Commerce.">
-    <title>sierra leone Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="sierra leone Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/og-image.jpg">
+    <meta name="description" content="WDD 230 - Web Frontend Development ">
+    <meta name="author" content="Michael momoh">
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Page description for social media preview">
+    <meta property="og:image" content="URL_to_your_image">
     <meta property="og:url" content="https://michealmomoh.github.io/wdd230/">
+    <title>Michael momoh - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/getDates.js" defer></script>
+    <link rel="icon" href="https://icon-library.com/images/favicon-icon/favicon-icon-22.jpg">
+
+
 </head>
 <body>
+    <hr>
     <header>
-        <h1>Welcome to michaelson Chamber of Commerce</h1>
-        <nav>
-            <ul class="navigation">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="#">Contact</a></li>
-                
-            
-            </ul>
-            <button class="hamburger-menu">☰</button>
-        </nav>
+        <img src="images/logo.jpg" alt="no images" width="200" >
+        <link rel="icon" href="images/favicon.ico">
+
+        <span> MICHAEL KELVIN MOMOH</span>
+        <button id="darkModeToggle">Dark Mode</button>
     </header>
-
+    <nav class="navigation">
+        <a href="../index.html" class="active">Home</a>
+        <a href="chamber.html"> Chamber </a>
+        <a href="../site_plan.html">Site Plan</a>
+        <a href="discover.html">Discover</a>
+        <a href="../form.html">Form</a>
+        
+      </nav>
     <main>
-        <section class="hero">
-            <img src="images/logo.jpg" alt="Welcome Image">
-            <div class="hero-text">
-                <h2>Join the Chamber of Commerce Today!</h2>
-                <a href="#" class="cta-button">Join Now</a>
-            </div>
-        </section>
-
-        <section class="events">
-            <h2>Current Events</h2>
-            <p>The website aims to promote local and international businesses and services, provide community material and  resources, and schedule events to foster economic growth.</p>
-        </section>
-
-        <section class="weather">
-            <h2>Weather Update</h2>
-            <p>Current weather in sierra leone </p>
-        </section>
-
-        <section class="spotlights">
-            <h2>Company Spotlights</h2>
-            <div class="spotlight">
-                <h3>michaelson Chamber of Commerce</h3>
-                <p>michaelson Chamber of Commerce. This name was selected because it clearly represents the chamber of commerce serving michaelson.</p>
-            </div>
-        </section>
+        <main class="grid-layout">
+            <aside class="sidebar">
+              <h2>About Our Area</h2>
+              <p id="visit-message"></p>
+              <ul>
+                <li>Population: 50,000</li>
+                <li>Median Age: 35.4 years</li>
+                <li>Key Industries: Tourism, Technology</li>
+                <li>Attractions: State Park, Historical Museum</li>
+              </ul>
+            </aside>
+            <section class="gallery">
+              <h2>Local Highlights</h2>
+              <div class="image-grid">
+                <figure>
+                  <img src="images/chamberofcommerce.jpg" alt="Description" class="lazy">
+                  <figcaption>buliding crave </figcaption>
+                </figure>
+                <figure>
+                  <img src="images/chamberofcommerce1.jpg" alt="Description" class="lazy">
+                  <figcaption>Chamber</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/Member.jpg" alt="Description" class="lazy">
+                  <figcaption>members of the chamber</figcaption>
+                </figure>
+                
+              </div>
+            </section>
+          </main>
+    
     </main>
-    <main class="grid-layout">
-        <aside class="sidebar">
-          <h2>About Our Area</h2>
-          <p id="visit-message"></p>
-          <ul>
-            <li>Population: 50,000</li>
-            <li>Median Age: 35.4 years</li>
-            <li>Key Industries: Tourism, Technology</li>
-            <li>Attractions: State Park, Historical Museum</li>
-          </ul>
-        </aside>
-        <section class="gallery">
-          <h2>Local Highlights</h2>
-          <div class="image-grid">
-            <figure>
-              <img src="images/chamberofcommerce.jpg" alt="Description" class="lazy">
-              <figcaption>buliding crave </figcaption>
-            </figure>
-            <figure>
-              <img src="images/chamberofcommerce1.jpg" alt="Description" class="lazy">
-              <figcaption>Chamber</figcaption>
-            </figure>
-            <figure>
-              <img src="images/Member.jpg" alt="Description" class="lazy">
-              <figcaption>members of the chamber</figcaption>
-            </figure>
-            
-          </div>
-        </section>
-      </main>
-
     <footer>
         <p>
             &copy; <span id="2025"></span> Michael momoh, sierra leone 
@@ -95,11 +74,8 @@
         <p id="lastModified"></p>
 
     </footer>
-
-    <script src="scripts/getDates.js"></script>
-    <script src="scripts/menuToggle.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="script/getDates.js"></script>
+    <script src="script/menuToggle.js"></script>
+    <hr>
 </body>
 </html>
