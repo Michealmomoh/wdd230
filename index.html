@@ -58,14 +58,15 @@
             </section>
 
         </div>
-        <div class="card ">
-            <section>
-                <h2>Information</h2>
-                <p>sierra Leone </p>
-                <p>Weather: <span id="weather-placeholder">78 - sunshine</span></p>
-                <p>Number of visits: <span id="visits-placeholder">30</span></p>
-            </section>
-        </div>
+        <section class="card" id="information">
+            <h2>Information</h2>
+            <p id="current-city"></p>
+            <div>
+              <img id="weather-icon" src="https://picsum.photos/50" alt="Weather icon" height="50" width="50">
+              <p><span id="current-temp"></span></p>
+            </div>
+            <p>Page Visits: <span class="visits">30</span></p>
+          </section>
         <div class="map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=YOUR_EMBED_LINK"
@@ -87,6 +88,8 @@
     </footer>
     <script src="script/getDates.js"></script>
     <script src="script/menuToggle.js"></script>
+    <script src="script/links.js"></script>
+    <script src="script/weather.js"></script>
     <hr>
 </body>
 </html>
