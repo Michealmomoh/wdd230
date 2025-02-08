@@ -1,0 +1,61 @@
+{
+    "members": [
+      {
+        "name": "mme tach touch",
+        "address": "123 Innovation Drive, Silicon Valley, CA",
+        "phone": "+2327856353r",
+        "website": "https://techsolutions.com",
+        "image": "techsolutions.webp",
+        "membership": "Gold"
+      },
+      {
+        "name": "Green Earth LLC",
+        "address": "789 Eco Lane, Portland, OR",
+        "phone": "+2327683673663",
+        "website": "https://greenearth.com",
+        "image": "greenearth.webp",
+        "membership": "Silver"
+      },
+      {
+        "name": "FastTrack Logistics",
+        "address": "456 Express Way, New York, NY",
+        "phone": "+23232424232",
+        "website": "https://fasttracklogistics.com",
+        "image": "fasttracklogistics.webp",
+        "membership": "Bronze"
+      },
+      {
+        "name": "Smart Finance Group",
+        "address": "321 Money Street, Chicago, IL",
+        "phone": "+1 555-444-5555",
+        "website": "https://smartfinance.com",
+        "image": "smartfinance.webp",
+        "membership": "Gold"
+      },
+      {
+        "name": "Elite Marketing Agency",
+        "address": "987 Creative Ave, Los Angeles, CA",
+        "phone": "+1 555-666-7777",
+        "website": "https://elitemarketing.com",
+        "image": "elitemarketing.webp",
+        "membership": "Silver"
+      },
+      {
+        "name": "Health & Wellness Co.",
+        "address": "654 Healthy Blvd, Austin, TX",
+        "phone": "+1 555-888-9999",
+        "website": "https://healthwellness.com",
+        "image": "healthwellness.webp",
+        "membership": "Bronze"
+      },
+      {
+        "name": "NextGen Software",
+        "address": "159 Future St, San Francisco, CA",
+        "phone": "+232767876473",
+        "website": "https://nextgensoftware.com",
+        "image": "nextgensoftware.webp",
+        "membership": "Gold"
+      }
+    ]
+  }
+  

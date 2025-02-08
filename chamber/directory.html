@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development ">
+    <meta name="author" content="Michael momoh">
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Page description for social media preview">
+    <meta property="og:image" content="URL_to_your_image">
+    <meta property="og:url" content="https://michealmomoh.github.io/wdd230/">
+    <title>Michael momoh - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/getDates.js" defer></script>
+    <link rel="icon" href="https://icon-library.com/images/favicon-icon/favicon-icon-22.jpg">
+
+
+</head>
+<body>
+    <hr>
+    <header>
+        <img src="images/logo.jpg" alt="no images" width="200" >
+        <link rel="icon" href="images/favicon.ico">
+
+        <span> MICHAEL KELVIN MOMOH</span>
+        <button id="darkModeToggle">Dark Mode</button>
+
+    </header>
+    <button id="hamburger" aria-label="Menu">&#9776;</button>
+    <nav class="navigation">
+        <a href="../index.html" class="active">Home</a>
+        <a href="chamber/chamber.html"> Chamber </a>
+        <a href="../site_plan.html">Site Plan</a>
+        <a href="chamber/discover.html"></a>
+        <a href="../form.html">Form</a>
+        
+      </nav>
+    <main>
+        <main>
+            <h1>Business Directory</h1>
+            <div class="view-toggle">
+              <button id="grid-view">Grid View</button>
+              <button id="list-view">List View</button>
+            </div>
+            <div id="directory" class="grid"></div>
+          </main>
+          <script src="scripts/directory.js"></script>
+          
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="2025"></span> Michael momoh, sierra leone 
+        </p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script src="script/getDates.js"></script>
+    <script src="script/menuToggle.js"></script>
+    <script src="script/links.js"></script>
+    <script src="script/weather.js"></script>
+    <hr>
+</body>
+</html>
